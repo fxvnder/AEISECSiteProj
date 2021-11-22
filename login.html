@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <title>CFAEISEC - Login</title>
+    <link rel="icon" type="image/png" href="media/favicon.png" sizes="32x32" />
+</head>
+
+<body>
+    
+    <!-- navbar -->
+  <nav>
+    <div id="menu">
+        <div id="home">
+            <a href="http://aeisec.pt/" id="home"><img src="media/logoaecompleto.png" alt="LOGO AE ISEC" width="175" height="36"></a>
+        </div>
+        
+        <a href="index.html">Home</a>
+        <div class="menudir">
+            <a href="servicos.html" >Serviços</a>
+            <a href="clientes.html" >Clientes</a>
+            <a href="orcamentos.html" >Orçamentos</a>
+            <a href="info.html" >Quem Somos</a>
+            <a href="login.html" >Login</a>
+        </div>
+        
+    </div>
+    </nav>
+    <br>
+    <div class="titulo">
+        <p>‌‌</p>  
+    </div>
+    
+    <!--Login-->
+    <div id="entrar">
+            <form method="post">
+                <fieldset id="registarnovo">
+                <legend>Registar</legend>
+                Nome: 
+                <input type="text" name="nome" required placeholder="Nome completo">
+                <br>
+                Género: 
+                <input type="radio" name="genero" value="Masculino" checked> Masculino
+                <input type="radio" name="genero" value="Feminino"> Feminino<br>
+                <br>
+                Cartão de identificação: 
+                <input type="text" name="cartao" required placeholder="Identificação">
+                <br>
+                Data de nascimento:
+                <input type="date" name="nascimento" min="1900-01-01" max="2018-01-01" required>
+                <br>
+                <br>
+                Email:
+                <input type="email" name="email" required placeholder="Exemplo@email.com">
+                <br>
+                <br>
+                Telemóvel:
+                <input type="tel" name="telemóvel" required placeholder="xxxxxxxxx">
+                <br>
+                <br>
+                Morada: 
+                <input type="text" name="morada" required placeholder="Rua, número, porta, Cidade, País, Código postal">
+                <br>
+                <br>
+                Nome de utilizador:                <input type="text" name="nomeutilizadorl" placeholder="Utilizador" required>
+                <br>
+                <br>
+                Password:                 <input type="password" name="passl" placeholder="Password" required>
+                <br>
+                <br>
+                <button name="registar" value="value" type="submit" onclick="alerta()">Registar</button>
+                <input type="reset"> 
+                </fieldset>
+            </form>
+                
+           
+                <fieldset id="login">
+                <legend>Login</legend>
+                Nome de utilizador
+                <br>
+                <input type="text" id="username" name="nomeutilizadorl" autofocus placeholder="Utilizador" >
+                <br>
+                <br>
+                Password
+                <br>
+                <input type="password" id="userpass" name="passl" placeholder="Password" >
+                <br>
+                <br>
+                <button name="login" onclick="log()">Login</button>
+                </fieldset>    
+            
+    </div>
+    
+    <div id="utilizador">
+        <div id="caixa">
+            <p id="nomeu">
+                Bem Vindo utilizador!
+            </p>
+            <img id="admin" src="media/admin.png" alt="Foto" >
+        </div>
+    </div>
+    
+        <script type="text/javascript">
+        
+        function log()
+        {
+            var user = document.getElementById("utilizador");
+            var formulario = document.getElementById("entrar");
+            
+            var nome = document.getElementById("username").value;
+            var pass = document.getElementById("userpass").value;
+            
+            if ((nome.trim() == "") || (pass.trim() == ""))
+                {
+                    alert("Digite os dados de utilizador");
+                    return;
+                }
+            
+            if ((nome == "admin") || (pass == "admin"))
+            {
+                    user.setAttribute("style", "display: inline-block;")
+                    formulario.setAttribute("style", "display: none;")
+            
+                    document.getElementById("nomeu").innerHTML = "Bem Vindo " + username.value + "!";
+            }
+            
+            if ((nome != "admin") && (pass != "admin"))
+            {
+                    alert("Dados errados");
+                    return;
+            }
+        }
+            
+            function alerta()
+            {
+                alert("Registo completo! Verifique o seu email");
+            }
+        
+    </script>
+    
+    <!-- rodapé -->
+    <footer>
+        <a href="info.html">Copyright 2019 © João Oliveira & António Rodrigues</a>
+      
+      <div class="contact-btn">
+        <a href="https://www.isec.pt">Página do ISEC >>></a>
+      </div>
+    </footer>  
+    
+    <!-- JS -->
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>

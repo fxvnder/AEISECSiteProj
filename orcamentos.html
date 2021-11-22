@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <title>CFAEISEC - Orçamentos</title>
+    <link rel="icon" type="image/png" href="media/favicon.png" sizes="32x32" />
+</head>
+
+<body>
+    
+    <!-- navbar -->
+  <nav>
+    <div id="menu">
+        <div id="home">
+            <a href="http://aeisec.pt/" id="home"><img src="media/logoaecompleto.png" alt="LOGO AE ISEC" width="175" height="36"></a>
+        </div>
+        
+        <a href="index.html">Home</a>
+        <div class="menudir">
+            <a href="servicos.html" >Serviços</a>
+            <a href="clientes.html" >Clientes</a>
+            <a href="orcamentos.html" >Orçamentos</a>
+            <a href="info.html" >Quem Somos</a>
+            <a href="login.html" >Login</a>
+        </div>
+        
+    </div>
+    </nav>
+    <br>
+    <div class="titulo">
+        <p>‌‌</p>  
+    </div>
+    
+    <!--Video background-->
+<!--    
+    <video playsinline autoplay muted loop poster="media/isec.mp4" id="bgvid">
+    <source src="media/isecloop.mp4" type="video/mp4">
+    </video>
+-->    
+    
+ <div class="textopag4">
+    <h2>Orçamento:</h2>
+    Queres o nosso apoio para organizar a tua próxima festa ou baile? Nós tratamos da bebida, DJs, lugar e tudo mais que tu precisares. Apenas vem falar connosco para te informares melhor acerca das condições na AEISEC, ou preenche o formulário abaixo para sabermos mais sobre ti, o teu projeto e para te podermos contactar.
+    Além de ganhares uma excelente festa, ainda vais apoiar-nos com os carros da Queima!<br/><br/>
+     
+    <!--Formulário-->
+    <div id="submeter" class="form">
+            <form method="post">
+                <fieldset id="base">
+                <legend>Formulário</legend>
+                Nome:  
+                <input type="text" name="nome" autofocus required placeholder="Nome completo, se faz favor">
+                <br><br>
+                Género: 
+                <input type="radio" name="genero" value="Masculino" checked> Masculino
+                <input type="radio" name="genero" value="Feminino"> Feminino
+                <input type="radio" name="genero" value="Outro"> Outro<br><br>
+                Cartão de identificação: 
+                <input type="text" name="cartao" required placeholder="Nº ID Civil (CC)">
+                <br><br>
+                Data de nascimento: 
+                <input type="date" name="nascimento" min="2000-01-01" max="2020-01-01" required>
+                <br><br>
+                Email: 
+                <input type="email" name="email" required placeholder="exemplo@email.com">
+                <br><br>
+                Telemóvel: 
+                <input type="tel" name="telemóvel" required placeholder="xxxxxxxxx">
+                <br><br>
+                Morada: 
+                <input type="text" name="morada" required placeholder="Nº, Porta, Código Postal">
+                <br><br>
+                Como vai ser? A que horas? Para quantas pessoas? De que precisas?
+                <br><br>
+                <textarea rows="2" cols="80">
+                </textarea>
+                <br/><br/>
+                <input type="reset"> 
+                <input type="submit" onclick="sucesso()">
+                </fieldset>   
+            </form>
+    </div>
+    <img src="media/logoaecompleto.png" style="-webkit-filter: drop-shadow(3px 3px 3px #FFF); filter: drop-shadow(2px 2px 2px #FFF);" class="logo">
+ </div>
+    
+    <!-- rodapé -->
+    <footer>
+        <a href="info.html">Copyright 2019 © João Oliveira & António Rodrigues</a>
+      
+      <div class="contact-btn">
+        <a href="https://www.isec.pt">Página do ISEC >>></a>
+      </div>
+    </footer>  
+    
+    <!-- JS -->
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>

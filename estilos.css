@@ -1,0 +1,441 @@
+body{
+    font-family: "Calibri", sans-serif;
+    background: #222;
+    color: #434027;
+    margin:0 auto;
+}
+
+nav{
+    background-color: #333;
+    position: fixed;
+    top:0px;
+    width:100%;
+    overflow: hidden;
+}
+
+#menu{
+    margin: 0;
+    padding: 0;
+}
+
+#menu a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+
+}
+
+#menu a:hover{
+    color: #9A0000;
+    background-color: #ddd;
+    text-decoration: underline;
+}
+
+#home{
+    background-color: #9A0000;
+    position: relative;
+    top: -13%;
+    text-decoration: none;
+    cursor:default;
+} 
+
+.menudir{
+    float: right;
+}
+
+.over{
+    color: #9A0000;
+    background-color: #ddd;
+}
+
+.container img{
+    width: 100%;
+}
+
+.column{
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+/*cor links*/
+.umlink{
+    color:#f99;
+}
+
+/* já visitado */
+.umlink:visited {
+  color: #faa;
+}
+
+/* seleciondo */
+.umlink:active {
+  color: #999;
+}
+
+.textopag{
+    color: #FFF;
+    background-color: #9A0000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.textopag2{
+    color: #FFF;
+    background-color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: fixed;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+.textopag3{
+    color: #FFF;
+    
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10% 12px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.textopag4{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    left: 15%;
+    height: 85%;
+    width: 70%;
+    text-align: justify;
+}
+
+.textopag4 h2 {
+    text-align: center;
+}
+
+.textopag5{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    left: 15%;
+    height: 85%;
+    width: 70%;
+    text-align: justify;
+}
+
+.form{
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+}
+
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.titulo{
+    text-align: center;
+    color: #9A0000;
+    font-size: 11px;
+    background-color: #9A0000;
+}
+
+
+/*imgs*/
+
+.logo {
+    position: absolute;
+    bottom: 0%;
+    left: 38%;
+}
+
+#infolo {
+    position: relative;
+    left: 40%;
+}
+
+#infoim{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.container div{
+    padding: 2px;
+}
+
+.normal{
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.big{
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+
+footer{
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    background-color: #333;
+}
+
+footer a{
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a:hover{
+    color: black;
+    background-color: #ddd;
+}
+
+
+footer .contact-btn{
+    float:right;
+    right:30px;
+    background-color: #003865;
+}
+
+.contact-btn a:hover{
+    background-color: #9A0000;
+    color:white;
+}
+
+#home{
+    position: absolute;
+    right:50%;
+}
+
+
+
+/*Vídeo Background*/
+
+video#bgvid 
+{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/*Login*/
+#login
+{
+    width: 45%;
+    float: left;
+    border-right: 1px white solid;
+    color: white;
+}
+
+#registarnovo
+{
+    width: 45%;
+    float: right;
+    height: 100%;
+    padding: 5px;
+    color: white;
+}
+
+#entrar
+{
+    display: inline-block;
+    width: 84%;
+    height: 75vh;
+    position: absolute;
+    right: 0;
+    padding: 40px;
+    margin-top: 0px;
+    font-weight: 100;
+    line-height: 160%;
+    letter-spacing: 4px;
+    font-size: 14px; 
+    text-align: left;
+}
+
+#utilizador
+{
+    display: none;
+    width: 84%;
+    height: 75vh;
+    position: absolute;
+    right: 0;
+    padding: 40px;
+    margin-top: 0px;
+    font-weight: 100;
+    line-height: 160%;
+    letter-spacing: 4px;
+    font-size: 14px; 
+    text-align: center;
+}
+
+#caixa
+{
+    width: 100%;
+    
+}
+
+#doge
+{
+    width: 30%;
+    padding: 30px;
+}
+
+
+
+* {box-sizing:border-box}
+
+
+/* Apresentação Slideshow */
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* butões */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #9A0000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Legenda da pic */
+.text {
+  color: #FFF;
+  background-color: #9A0000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px 12px;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Indicador diapositivo texto top left */
+.numbertext {
+    color: #9A0000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Indicador diapositivo pontos */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #550000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ac0000;
+}
+
+/* Animação Fade-In */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
